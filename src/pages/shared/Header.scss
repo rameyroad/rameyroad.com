@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    height: 90px;
+    padding: 25px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 997;
+
+    /*--------------------------------------------------------------
+    # Logo Section
+    --------------------------------------------------------------*/
+    #logo {
+        margin: 15px 20px 0px;
+        transition: all 1s;
+    }
+}
+
+#header.header-scrolled {
+    background: rgba(6, 12, 34, 0.98);
+    height: 80px;
+    padding: 15px 0;
+    transition: all 1s;
+
+    /*--------------------------------------------------------------
+        # Logo Section
+        --------------------------------------------------------------*/
+    #logo {
+        margin: 0px 20px 0px;
+        transition: all 1s;
+    }
+}
+
+#header #logo h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#header #logo h1 span {
+    color: #273b90;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+    color: #fff;
+}
+
+#header #logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+/* Nav Meu Container */
+/* Nav Meu Styling */
+a.nav-link {
+    color: rgba(202, 206, 221, 0.8) !important;
+    font-weight: bold;
+}
+
+a.nav-link:hover {
+    color: #fff !important;
+    font-weight: bold;
+
+    // border-bottom: 2px solid #ffffff;
+    padding-bottom: 2px;
+}
+
+.section-header::before {
+    width: 180px;
+    background: #273b90;
+    left: calc(50% - 85px);
+}
+
+.nav-menu {
+    margin-left: auto;
+}
