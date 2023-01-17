@@ -1,4 +1,4 @@
-name: TCDI_Developer_Site
+name: Ramey_Road_Site
 
 env:
     AZURE_WEBAPP_NAME: rameyroad-rroad-eus-con01 # the web app name
