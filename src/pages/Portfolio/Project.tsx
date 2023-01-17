@@ -21,7 +21,7 @@ export const Project: React.FC = () => {
 
     useEffect(() => {
         if (projName) {
-            let contentUrl = `/projects/${projName}.html`;
+            let contentUrl = `https://rameyroadeus01.blob.core.windows.net/rameyroad-com/content/html/projects/${projName}.html`;
             fetch(contentUrl)
                 .then((res) => res.text())
                 .then((text) => setProjContent(text));
@@ -33,11 +33,15 @@ export const Project: React.FC = () => {
             <div className="container">
                 <div style={{ float: "right" }}>
                     <Link to="/portfolio">
-                        <i className="fa fa-chevron-left"></i>&nbsp; Back to portfolio
+                        <i className="fa fa-chevron-left"></i>&nbsp; Back to
+                        portfolio
                     </Link>
                 </div>
                 <div style={{ display: "block", clear: "both" }}>
-                    <ReactMarkdown rehypePlugins={[rehypeRaw]} children={projContent} />
+                    <ReactMarkdown
+                        rehypePlugins={[rehypeRaw]}
+                        children={projContent}
+                    />
                 </div>
             </div>
         </section>
