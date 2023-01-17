@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { contentRoot } from "../../App";
 
 import "./Portfolio.scss";
 
@@ -20,7 +21,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                    src={`${contentRoot}/images/ccl-logo-header.png`}
                                     alt="CCL"
                                     width="249"
                                     height="47"
@@ -54,7 +55,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                    src={`${contentRoot}/images/ccl-logo-header.png`}
                                     alt="CCL"
                                     width="249"
                                     height="47"
@@ -87,7 +88,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/4d5c65f5-142b-4e17-86c2-c156db934db2-snappulse_icon.png"
+                                    src={`${contentRoot}/images/snappulse_icon.png`}
                                     alt="SnapPulse"
                                     height="75"
                                 />
@@ -119,7 +120,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                    src={`${contentRoot}/images/ccl-logo-header.png`}
                                     alt="CCL"
                                     width="249"
                                     height="47"
@@ -154,7 +155,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/f2d06441-a80e-44f5-88b1-63a7267c3251-CCL_CompassOverlay.png"
+                                    src={`${contentRoot}/images/CCL_CompassOverlay.png`}
                                     alt="CCL Compass"
                                     width="200"
                                 />
@@ -188,7 +189,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/939f8c34-34fd-453a-9cd9-13bee75f213d-gvr-logo.png"
+                                    src={`${contentRoot}/images/gvr-logo.png`}
                                     alt="Goode Vacation Rentals"
                                     width="200"
                                     height="54"
@@ -236,7 +237,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                    src={`${contentRoot}/images/ccl-logo-header.png`}
                                     alt="CCL"
                                 />
                             </div>
@@ -269,7 +270,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                    src={`${contentRoot}/images/ccl-logo-header.png`}
                                     alt="CCL"
                                 />
                             </div>
@@ -303,7 +304,7 @@ export const Portfolio: React.FC = () => {
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
-                                    src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/bfb5b2b6-27f9-4cc9-aa38-af9c12bd8844-beyond415_logo.png"
+                                    src={`${contentRoot}/images/beyond415_logo.png`}
                                     alt="Beyond415 logo"
                                     height="75"
                                 />

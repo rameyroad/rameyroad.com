@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { contentRoot } from "../../App";
 
 import "./Resume.scss";
 
@@ -54,7 +55,7 @@ export const Resume: React.FC = () => {
                         <p>
                             <img
                                 style={{ padding: 15, float: "right" }}
-                                src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                src={`${contentRoot}/images/ccl-logo-header.png`}
                                 width="250"
                             />
                         </p>
@@ -97,7 +98,7 @@ export const Resume: React.FC = () => {
                         <p>
                             <img
                                 style={{ padding: 15, float: "right" }}
-                                src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/4b040351-c121-4c62-b46e-8bd6f6dad973-newriverinnovation_logo.png"
+                                src={`${contentRoot}/images/newriverinnovation_logo.png`}
                                 width="250"
                             />
                         </p>
@@ -140,7 +141,7 @@ export const Resume: React.FC = () => {
                         <p>
                             <img
                                 style={{ padding: 15, float: "right" }}
-                                src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/804589be-5c60-40a1-b63f-5273613b8bad-ccl-logo-header.png"
+                                src={`${contentRoot}/images/ccl-logo-header.png`}
                                 width="250"
                             />
                         </p>
@@ -167,7 +168,7 @@ export const Resume: React.FC = () => {
                         <p>
                             <img
                                 style={{ padding: 15, float: "right" }}
-                                src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/30e133ca-ac5d-496a-a310-ba7e45f2ce57-westover-logo.png"
+                                src={`${contentRoot}/images/westover-logo.png`}
                                 width="250"
                             />
                         </p>
@@ -192,7 +193,7 @@ export const Resume: React.FC = () => {
                         <p>
                             <img
                                 style={{ padding: 15, float: "right" }}
-                                src="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/8ccff272-26ae-46c3-b54b-66811f6d7c04-gilbarco-logo.png"
+                                src={`${contentRoot}/images/gilbarco-logo.png`}
                                 width="250"
                             />
                         </p>
@@ -254,7 +255,7 @@ export const Resume: React.FC = () => {
                                 <p>&nbsp;</p>
                                 <h4>
                                     <a
-                                        href="https://rameyroadeus01.blob.core.windows.net/rroad-piranha/b6232ae9-f805-4b51-acb6-51c31fcf0bd3-Resume.pdf"
+                                        href={`${contentRoot}/docs/Resume.pdf`}
                                         target="_blank"
                                         rel="noopener"
                                     >
