@@ -2,8 +2,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Layout } from "./pages/Layout";
 
-import "./App.css";
 import { Home } from "./pages/Home/Home";
+import { Portfolio } from "./pages/Portfolio/Portfolio";
+import { Project } from "./pages/Portfolio/Project";
+import { Resume } from "./pages/Resume/Resume";
+import { Education } from "./pages/Education/Education";
+
+import "./App.css";
 
 function App() {
     return (
@@ -11,9 +16,10 @@ function App() {
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                        {/* <Route path="/blog/:postName" element={<DisplayBlogPost />}></Route>
-                        <Route path="/vlog/:postName" element={<DisplayVlogPost />}></Route>
-                        <Route path="/blog" element={<BlogsAndVlogs />}></Route> */}
+                        <Route path="/portfolio/:projName" element={<Project />}></Route>
+                        <Route path="/portfolio" element={<Portfolio />}></Route>
+                        <Route path="/resume" element={<Resume />}></Route>
+                        <Route path="/education" element={<Education />}></Route>
                         <Route path="/" element={<Home />}></Route>
                     </Routes>
                 </Layout>

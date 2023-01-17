@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
@@ -6,12 +6,14 @@ import "./Header.scss";
 import logo from "../../assets/images/logo.png";
 
 export const Header: React.FC = () => {
+    const location = useLocation();
+
     const [menuExpanded, setMenuExpanded] = useState<boolean>(false);
     const [scrollPosition, setScrollPosition] = useState<number>(0);
 
     const toggleMenu = () => setMenuExpanded(!menuExpanded);
 
-    let navbarclassName = `${scrollPosition === 0 ? "" : "header-scrolled"}`;
+    let navbarclassName = `${location?.pathname === "/" && scrollPosition === 0 ? "" : "header-scrolled"}`;
 
     const handleScroll = () => {
         setScrollPosition(window.pageYOffset);
@@ -24,6 +26,10 @@ export const Header: React.FC = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     });
+
+    useEffect(() => {
+        console.log("location", location);
+    }, [location]);
 
     return (
         <header id="header" className={navbarclassName}>
