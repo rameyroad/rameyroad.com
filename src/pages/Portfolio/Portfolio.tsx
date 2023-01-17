@@ -16,7 +16,7 @@ export const Portfolio: React.FC = () => {
                     <h2>Portfolio</h2>
                 </div>
                 <div className="row">
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -28,21 +28,29 @@ export const Portfolio: React.FC = () => {
                             </div>
                             <div className="card-body m-1 p-2">
                                 <h5 className="card-title m-2">
-                                    <Link to="/portfolio/ella-by-ccl">Everyday Leader Learning Assistant - ELLA</Link>
+                                    <Link to="/portfolio/ella-by-ccl">
+                                        Everyday Leader Learning Assistant -
+                                        ELLA
+                                    </Link>
                                 </h5>
                                 <p className="card-text">
-                                    A mobile application that allows users of all levels to develop their leadership
-                                    skills at their own pace &amp; schedule.&nbsp;
+                                    A mobile application that allows users of
+                                    all levels to develop their leadership
+                                    skills at their own pace &amp;
+                                    schedule.&nbsp;
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/ella-by-ccl">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/ella-by-ccl"
+                                >
                                     Learn More
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -54,21 +62,28 @@ export const Portfolio: React.FC = () => {
                             </div>
                             <div className="card-body m-1 p-2">
                                 <h5 className="card-title m-2">
-                                    <Link to="/portfolio/ccl-lxd">Leadership By Design</Link>
+                                    <Link to="/portfolio/ccl-lxd">
+                                        Leadership By Design
+                                    </Link>
                                 </h5>
                                 <p className="card-text">
-                                    A mobile application that allows users of all levels to develop their leadership
-                                    skills at their own pace &amp; schedule.&nbsp;
+                                    A mobile application that allows users of
+                                    all levels to develop their leadership
+                                    skills at their own pace &amp;
+                                    schedule.&nbsp;
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/ccl-lxd">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/ccl-lxd"
+                                >
                                     Learn More
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -84,18 +99,23 @@ export const Portfolio: React.FC = () => {
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Digital tool that allows leaders to set development goals and periodically "pulse"
-                                    their colleagues for feedback on their progress
+                                    Digital tool that allows leaders to set
+                                    development goals and periodically "pulse"
+                                    their colleagues for feedback on their
+                                    progress
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/snappulse">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/snappulse"
+                                >
                                     Learn More
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -107,23 +127,30 @@ export const Portfolio: React.FC = () => {
                             </div>
                             <div className="card-body m-1 p-2">
                                 <h5 className="card-title m-2">
-                                    <Link to="/portfolio/delivery-support-tool" target="">
+                                    <Link
+                                        to="/portfolio/delivery-support-tool"
+                                        target=""
+                                    >
                                         Delivery Support Tool
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Merges multiple, independent applications into a single online platform for managing
+                                    Merges multiple, independent applications
+                                    into a single online platform for managing
                                     multiple lines of business.&nbsp;
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/delivery-support-tool">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/delivery-support-tool"
+                                >
                                     Learn More
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -139,8 +166,10 @@ export const Portfolio: React.FC = () => {
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Digital tool that distills and organizes more than 50 years of leadership expertise,
-                                    creating personalized strategies that help leaders build on strengths and improve in
+                                    Digital tool that distills and organizes
+                                    more than 50 years of leadership expertise,
+                                    creating personalized strategies that help
+                                    leaders build on strengths and improve in
                                     areas of development.
                                 </p>
                             </div>
@@ -155,7 +184,7 @@ export const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -167,13 +196,18 @@ export const Portfolio: React.FC = () => {
                             </div>
                             <div className="card-body m-1 p-2">
                                 <h5 className="card-title m-2">
-                                    <Link to="/portfolio/goode-vacation-rentals" target="">
+                                    <Link
+                                        to="/portfolio/goode-vacation-rentals"
+                                        target=""
+                                    >
                                         Goode Vacation Rentals
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Vacation rentals site in Hilton Head, SC. Built &amp; host custom website for
-                                    displaying property information, searching availability, and taking online
+                                    Vacation rentals site in Hilton Head, SC.
+                                    Built &amp; host custom website for
+                                    displaying property information, searching
+                                    availability, and taking online
                                     reservations.
                                 </p>
                             </div>
@@ -188,7 +222,7 @@ export const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="col-12 col-md-6 col-xl-3">
+                    {/* <div className="col-12 col-md-6 col-xl-4">
 <div className="card mb-3">
 <div className="card-header"><img style="float: left;" src="https://fallglobal.westoverchurch.com/img/ambition_logo.png" alt="CCL" height="50" /></div>
 <div className="card-body m-1 p-2" >
@@ -198,7 +232,7 @@ export const Portfolio: React.FC = () => {
 <div className="card-footer text-right"><Link className="btn btn-outline-primary btn-sm" to="https://fallglobal.westoverchurch.com/" target="_blank" rel="noopener">Visit Site</Link></div>
                         </div></div> */}
 
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -213,19 +247,25 @@ export const Portfolio: React.FC = () => {
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Provides a common platform for sending emails, push notifications, &amp; SMS message
-                                    for CCL applications. Features Azure service bus, Cosmos DB, &amp; REST API to
-                                    create a robust, enterprise level notification system.
+                                    Provides a common platform for sending
+                                    emails, push notifications, &amp; SMS
+                                    message for CCL applications. Features Azure
+                                    service bus, Cosmos DB, &amp; REST API to
+                                    create a robust, enterprise level
+                                    notification system.
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/clavin">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/clavin"
+                                >
                                     Learn More
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -240,20 +280,26 @@ export const Portfolio: React.FC = () => {
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Provides a common platform for securely storing and tracking participant assets
-                                    (PDFs, audio/video files, etc.) for CCL applications. Features Azure blob storage,
-                                    AES encryption, &amp; REST API to create a robust, enterprise level asset management
+                                    Provides a common platform for securely
+                                    storing and tracking participant assets
+                                    (PDFs, audio/video files, etc.) for CCL
+                                    applications. Features Azure blob storage,
+                                    AES encryption, &amp; REST API to create a
+                                    robust, enterprise level asset management
                                     system.
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/asset-store">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/asset-store"
+                                >
                                     Learn More
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 col-xl-3">
+                    <div className="col-12 col-md-6 col-xl-4">
                         <div className="card mb-3">
                             <div className="card-header">
                                 <img
@@ -269,13 +315,18 @@ export const Portfolio: React.FC = () => {
                                     </Link>
                                 </h5>
                                 <p className="card-text">
-                                    Toolkit for IRS practice and procedure, featuring step-by-step instructions, sample
-                                    documents and letters, and time and billing estimates for more than 50 individual
-                                    tax issues.
+                                    Toolkit for IRS practice and procedure,
+                                    featuring step-by-step instructions, sample
+                                    documents and letters, and time and billing
+                                    estimates for more than 50 individual tax
+                                    issues.
                                 </p>
                             </div>
                             <div className="card-footer text-right">
-                                <Link className="btn btn-outline-primary btn-sm" to="/portfolio/beyond415">
+                                <Link
+                                    className="btn btn-outline-primary btn-sm"
+                                    to="/portfolio/beyond415"
+                                >
                                     Learn More
                                 </Link>
                             </div>
