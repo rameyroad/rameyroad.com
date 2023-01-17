@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap";
 
+import "./styles/About.scss";
+
 export const About: React.FC = () => {
     return (
         <section id="about">

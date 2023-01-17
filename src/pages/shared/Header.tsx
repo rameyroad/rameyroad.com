@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
 
     const toggleMenu = () => setMenuExpanded(!menuExpanded);
 
-    let navbarClass = `fixed-top ${scrollPosition === 0 ? "" : "scrolled"}`;
+    let navbarclassName = `${scrollPosition === 0 ? "" : "header-scrolled"}`;
 
     const handleScroll = () => {
         setScrollPosition(window.pageYOffset);
@@ -26,11 +26,11 @@ export const Header: React.FC = () => {
     });
 
     return (
-        <header id="header">
+        <header id="header" className={navbarclassName}>
             <Container>
-                <Navbar collapseOnSelect className={navbarClass} expand="md" expanded={menuExpanded}>
+                <Navbar collapseOnSelect className="fixed-top" expand="md" expanded={menuExpanded} variant="dark">
                     <Navbar.Brand>
-                        <div id="logo">
+                        <div id="nav_logo">
                             <Link className="nav-link" to="/#home">
                                 <img src={logo} alt="logo" className="app-logo" />
                             </Link>

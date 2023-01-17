@@ -1,12 +1,14 @@
-import "./Logo.scss";
+import "./styles/Logo.scss";
+
+import logo from "../../../assets/images/logo_icon.png";
 
 export const Logo: React.FC = () => {
     return (
         <section id="logo">
-            <div className="logo-container wow fadeIn">
+            <div className="logo-container fadeIn">
                 <div className="row m-0">
                     <div className="col-12 text-center">
-                        <img src="/img/logo_icon.png" style={{ width: "350px" }} />
+                        <img src={logo} style={{ width: "350px" }} />
                     </div>
                     <div className="col-12 text-center social-links">
                         <a target="_blank" href="#contact" className="scrollto">

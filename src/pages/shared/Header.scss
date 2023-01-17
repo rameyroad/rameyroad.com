@@ -1,86 +1,130 @@
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+@import "./styles/theme.scss";
+
 #header {
     height: 90px;
-    padding: 25px;
+    padding: 25px 0;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
+    transition: all 0.5s;
     z-index: 997;
 
-    /*--------------------------------------------------------------
-    # Logo Section
-    --------------------------------------------------------------*/
-    #logo {
-        margin: 15px 20px 0px;
-        transition: all 1s;
+    #nav_logo {
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 6px 0;
+            line-height: 1;
+            font-family: $font-family_2;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+            span {
+                color: $color_2;
+            }
+
+            a {
+                color: $color_5;
+
+                &:hover {
+                    color: $color_5;
+                }
+            }
+        }
+
+        img {
+            padding: 0;
+            margin: 0;
+            max-height: 60px;
+            transition: all 0.5s;
+        }
     }
 }
 
-#header.header-scrolled {
+#header.header-scrolled,
+#header.header-fixed {
     background: rgba(6, 12, 34, 0.98);
     height: 80px;
-    padding: 15px 0;
-    transition: all 1s;
+    padding: 5px 0;
+    transition: all 0.5s;
 
-    /*--------------------------------------------------------------
-        # Logo Section
-        --------------------------------------------------------------*/
-    #logo {
-        margin: 0px 20px 0px;
-        transition: all 1s;
+    #nav_logo {
+        img {
+            padding: 0;
+            margin: 0;
+            max-height: 40px;
+            transition: all 0.5s;
+        }
     }
-}
-
-#header #logo h1 {
-    font-size: 36px;
-    margin: 0;
-    padding: 6px 0;
-    line-height: 1;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-#header #logo h1 span {
-    color: #273b90;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-    color: #fff;
-}
-
-#header #logo img {
-    padding: 0;
-    margin: 0;
-    max-height: 40px;
-}
-
-/* Nav Meu Container */
-/* Nav Meu Styling */
-a.nav-link {
-    color: rgba(202, 206, 221, 0.8) !important;
-    font-weight: bold;
-}
-
-a.nav-link:hover {
-    color: #fff !important;
-    font-weight: bold;
-
-    // border-bottom: 2px solid #ffffff;
-    padding-bottom: 2px;
-}
-
-.section-header::before {
-    width: 180px;
-    background: #273b90;
-    left: calc(50% - 85px);
 }
 
 .nav-menu {
+    margin: 0;
     margin-left: auto;
+    padding: 0;
+    list-style: none;
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        padding: 8px;
+        text-decoration: none;
+        display: inline-block;
+        color: $color_7;
+        font-family: $font-family_2;
+        font-weight: 600;
+        font-size: 14px;
+        outline: none;
+
+        &:hover {
+            color: $color_5;
+
+            &:before {
+                visibility: visible;
+                width: 100%;
+            }
+        }
+    }
+
+    .menu-active {
+        a {
+            color: $color_5;
+        }
+
+        >a {
+            &:before {
+                visibility: visible;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.sf-arrows {
+    .sf-with-ul {
+        padding-right: 30px;
+
+        &:after {
+            content: "\f107";
+            position: absolute;
+            right: 15px;
+            font-family: $font-family_3;
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
+
+    ul {
+        .sf-with-ul {
+            &:after {
+                content: "\f105";
+            }
+        }
+    }
 }
