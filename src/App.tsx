@@ -4,7 +4,7 @@ import { Layout } from "./pages/Layout";
 
 import { Home } from "./pages/Home/Home";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
-import { Project } from "./pages/Portfolio/Project";
+import { ProjectDisplay } from "./pages/Portfolio/ProjectDisplay";
 import { Resume } from "./pages/Resume/Resume";
 import { Education } from "./pages/Education/Education";
 
@@ -21,7 +21,7 @@ function App() {
                     <Routes>
                         <Route
                             path="/portfolio/:projName"
-                            element={<Project />}
+                            element={<ProjectDisplay />}
                         ></Route>
                         <Route
                             path="/portfolio"

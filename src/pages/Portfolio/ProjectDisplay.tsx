@@ -4,29 +4,41 @@ import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
+import { Project } from "../../@types/project";
+import { getAllProjects } from "../../services/apiClient";
+
 import "./Portfolio.scss";
 
 type ProjectParams = {
     projName: string;
 };
 
-export const Project: React.FC = () => {
+export const ProjectDisplay: React.FC = () => {
     const { projName } = useParams<ProjectParams>();
     const [projContent, setProjContent] = useState<string>("");
+
+    const [project, setProject] = useState<Project | undefined>();
+
+    const loadData = async () => {
+        let pjs = await getAllProjects();
+        let project = pjs.find((p) => p.id === projName);
+        setProject(project);
+    };
 
     useEffect(() => {
         let elHeader = document.getElementById("header");
         if (elHeader) elHeader.className = "header-fixed";
+
+        loadData();
     }, []);
 
     useEffect(() => {
-        if (projName) {
-            let contentUrl = `https://rameyroadeus01.blob.core.windows.net/rameyroad-com/content/html/projects/${projName}.html`;
-            fetch(contentUrl)
+        if (project) {
+            fetch(project.contentUrl)
                 .then((res) => res.text())
                 .then((text) => setProjContent(text));
         }
-    }, [projName]);
+    }, [project]);
 
     return (
         <section id="portfolio" className="fadeInUp">
