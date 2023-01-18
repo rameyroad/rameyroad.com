@@ -13,7 +13,11 @@ export const Header: React.FC = () => {
 
     const toggleMenu = () => setMenuExpanded(!menuExpanded);
 
-    let navbarclassName = `${location?.pathname === "/" && scrollPosition === 0 ? "" : "header-scrolled"}`;
+    let navbarclassName = `${
+        location?.pathname === "/" && scrollPosition === 0
+            ? ""
+            : "header-scrolled"
+    }`;
 
     const handleScroll = () => {
         setScrollPosition(window.pageYOffset);
@@ -34,27 +38,60 @@ export const Header: React.FC = () => {
     return (
         <header id="header" className={navbarclassName}>
             <Container>
-                <Navbar collapseOnSelect className="fixed-top" expand="md" expanded={menuExpanded} variant="dark">
+                <Navbar
+                    collapseOnSelect
+                    className="fixed-top"
+                    expand="lg"
+                    expanded={menuExpanded}
+                    variant="dark"
+                >
                     <Navbar.Brand>
                         <div id="nav_logo">
-                            <Link className="nav-link" to="/#home">
-                                <img src={logo} alt="logo" className="app-logo" />
+                            <Link
+                                className="nav-link"
+                                to="/#home"
+                                onClick={toggleMenu}
+                            >
+                                <img
+                                    src={logo}
+                                    alt="logo"
+                                    className="app-logo"
+                                />
                             </Link>
                         </div>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={toggleMenu} />
+                    <Navbar.Toggle
+                        aria-controls="responsive-navbar-nav"
+                        onClick={toggleMenu}
+                    />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="nav-menu">
-                            <Link className="nav-link" to="/">
+                            <Link
+                                className="nav-link"
+                                to="/"
+                                onClick={toggleMenu}
+                            >
                                 Home
                             </Link>
-                            <Link className="nav-link" to="/portfolio">
+                            <Link
+                                className="nav-link"
+                                to="/portfolio"
+                                onClick={toggleMenu}
+                            >
                                 Portfolio
                             </Link>
-                            <Link className="nav-link" to="/resume">
+                            <Link
+                                className="nav-link"
+                                to="/resume"
+                                onClick={toggleMenu}
+                            >
                                 Resume
                             </Link>
-                            <Link className="nav-link" to="/education">
+                            <Link
+                                className="nav-link"
+                                to="/education"
+                                onClick={toggleMenu}
+                            >
                                 Education
                             </Link>
                         </Nav>
