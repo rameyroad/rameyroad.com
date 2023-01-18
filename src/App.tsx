@@ -27,6 +27,10 @@ function App() {
                             path="/portfolio"
                             element={<Portfolio />}
                         ></Route>
+                        <Route
+                            path="/resume/:detailId"
+                            element={<Resume />}
+                        ></Route>
                         <Route path="/resume" element={<Resume />}></Route>
                         <Route
                             path="/education"
