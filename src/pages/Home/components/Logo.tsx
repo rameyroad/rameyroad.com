@@ -17,18 +17,10 @@ export const Logo: React.FC = () => {
                         {/* <a target="_blank" href="http://facebook.com/RameyRoad" className="facebook">
                             <i className="fa fa-facebook"></i>
                         </a> */}
-                        <a
-                            target="_blank"
-                            href="http://twitter.com/RameyRoad"
-                            className="twitter"
-                        >
+                        <a target="_blank" href="http://twitter.com/RameyRoad" className="twitter">
                             <i className="fa fa-twitter"></i>
                         </a>
-                        <a
-                            target="_blank"
-                            href="http://www.linkedin.com/in/jmoore4"
-                            className="linkedin"
-                        >
+                        <a target="_blank" href="http://www.linkedin.com/in/jmoore4" className="linkedin">
                             <i className="fa fa-linkedin"></i>
                         </a>
                     </div>

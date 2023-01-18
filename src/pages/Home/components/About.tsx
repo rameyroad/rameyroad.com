@@ -14,8 +14,8 @@ export const About: React.FC = () => {
                         <blockquote>
                             <div className="row">
                                 <div className="col-12 text-left">
-                                    [There are] two types of leaders: there are thinkers and there are doers. Some are
-                                    idea generators and <strong>others are the implementers</strong>.
+                                    Two types of leaders: there are thinkers and there are <strong>doers</strong>. Some
+                                    are idea generators and <strong>others are the implementers</strong>.
                                 </div>
                                 <div className="col-12 text-right">- Gary Rohrmayer</div>
                             </div>
