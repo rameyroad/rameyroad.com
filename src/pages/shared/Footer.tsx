@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 
+import "./Footer.scss";
+
 export const Footer: React.FC = () => {
     return (
         <footer id="footer">

@@ -1,0 +1,42 @@
+@import "./styles/theme.scss";
+
+.back-to-top {
+    position: fixed;
+    background: $color_2;
+    color: $color_5;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    right: 15px;
+    bottom: 15px;
+    transition: opacity 5s;
+
+    &.shown {
+        transition: opacity 1.5s;
+        opacity: 1;
+        right: 15px;
+    }
+
+    &.hidden {
+        transition: opacity 1.5s;
+        opacity: 0;
+        right: -150px;
+    }
+
+    i {
+        font-size: 24px;
+        padding-top: 6px;
+    }
+
+    &:focus {
+        background: $color_11;
+        color: $color_5;
+        outline: none;
+    }
+
+    &:hover {
+        background: $color_11;
+        color: $color_5;
+    }
+}
