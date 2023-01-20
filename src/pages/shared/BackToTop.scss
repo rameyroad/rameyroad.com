@@ -10,18 +10,13 @@
     border-radius: 50px;
     right: 15px;
     bottom: 15px;
-    transition: opacity 5s;
+    opacity: 0;
+    transition: opacity .75s;
 
     &.shown {
-        transition: opacity 1.5s;
+        transition: opacity .75s;
         opacity: 1;
         right: 15px;
-    }
-
-    &.hidden {
-        transition: opacity 1.5s;
-        opacity: 0;
-        right: -150px;
     }
 
     i {

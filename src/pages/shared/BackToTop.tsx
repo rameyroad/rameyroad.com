@@ -28,7 +28,7 @@ export const BackToTop: React.FC = () => {
 
     return (
         <Fragment>
-            <Link to="#" className={`back-to-top ${scrollPosition > 25 ? "shown" : "hidden"}`} onClick={scrollToTop}>
+            <Link to="#" className={`back-to-top ${scrollPosition > 25 ? "shown" : ""}`} onClick={scrollToTop}>
                 <i className="fa fa-angle-up"></i>
             </Link>
         </Fragment>

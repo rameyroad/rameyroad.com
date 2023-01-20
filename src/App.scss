@@ -16,3 +16,7 @@ a:focus {
     outline: none;
     text-decoration: none;
 }
+
+#mainPage {
+    min-height: calc(100vh - 151px);
+}

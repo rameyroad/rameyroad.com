@@ -11,9 +11,7 @@ export const Portfolio: React.FC = () => {
 
     const loadData = async () => {
         let pjs = await getAllProjects();
-        let sorted = [...pjs].sort(
-            (a: any, b: any) => a.sequenceNum - b.sequenceNum
-        );
+        let sorted = [...pjs].sort((a: any, b: any) => a.sequenceNum - b.sequenceNum);
         setAllProjects(sorted);
     };
 
@@ -37,23 +35,15 @@ export const Portfolio: React.FC = () => {
                                 <div className="col-12 col-md-6 col-xl-4">
                                     <div className="card mb-5">
                                         <div className="card-header text-center">
-                                            <img
-                                                src={project.imageUrl}
-                                                alt={project.title}
-                                                height="50"
-                                            />
+                                            <Link to={`/portfolio/${project.id}`}>
+                                                <img src={project.imageUrl} alt={project.title} height="50" />
+                                            </Link>
                                         </div>
                                         <div className="project-body card-body m-1 p-2">
                                             <h5 className="card-title m-2">
-                                                <Link
-                                                    to={`/portfolio/${project.id}`}
-                                                >
-                                                    {project.shortDescription}
-                                                </Link>
+                                                <Link to={`/portfolio/${project.id}`}>{project.shortDescription}</Link>
                                             </h5>
-                                            <p className="card-text">
-                                                {project.description}
-                                            </p>
+                                            <p className="card-text">{project.description}</p>
                                         </div>
                                         <div className="card-footer text-right">
                                             <Link
