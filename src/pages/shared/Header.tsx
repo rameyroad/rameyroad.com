@@ -27,6 +27,10 @@ export const Header: React.FC = () => {
         };
     });
 
+    useEffect(() => {
+        console.log("location", location);
+    }, [location.pathname]);
+
     return (
         <header id="header" className={navbarclassName}>
             <Container>
