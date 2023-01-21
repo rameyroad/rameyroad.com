@@ -47,7 +47,7 @@ export const Portfolio: React.FC = () => {
                                         </div>
                                         <div className="card-footer text-right">
                                             <Link
-                                                className="btn btn-outline-primary btn-sm"
+                                                className="btn btn-outline-custom btn-sm"
                                                 to={`/portfolio/${project.id}`}
                                             >
                                                 Learn More

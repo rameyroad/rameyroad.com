@@ -9,6 +9,19 @@
         max-width: 300px;
     }
 
+    .card {
+        border: unset;
+        border-left: 10px solid #cccccc;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    .card-header,
+    .card-footer {
+        background-color: transparent;
+        border: unset;
+    }
+
     .card-header {
         img {
             width: unset;
@@ -19,97 +32,46 @@
     .project-body {
         height: 200px;
     }
-
-    .speaker {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 30px;
-
-        .details {
-            background: rgba(6, 12, 34, 0.76);
-            position: absolute;
-            left: 0;
-            bottom: -30px;
-            right: 0;
-            text-align: center;
-            padding-top: 10px;
-            transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-
-            h3 {
-                color: $color_1;
-                font-size: 22px;
-                font-weight: 600;
-                margin-bottom: 5px;
-            }
-
-            p {
-                color: $color_5;
-                font-size: 15px;
-                margin-bottom: 10px;
-                font-style: italic;
-            }
-
-            .social {
-                height: 30px;
-            }
-
-            a {
-                color: $color_5;
-
-                &:hover {
-                    color: $color_5;
-                }
-            }
-        }
-
-        &:hover {
-            .details {
-                bottom: 0;
-            }
-        }
-    }
 }
 
-#speakers-details {
-    padding: 60px 0;
+$btn-background: $color_9;
+$btn-border: darken($color_2, 10%);
+$btn-color: $color_2;
 
-    .details {
-        h2 {
-            color: $color_5;
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
+.btn-outline-custom {
+    color: $btn-color;
+    background-color: $btn-background;
+    background-image: none;
+    border-color: $color_9;
+}
 
-        .social {
-            margin-bottom: 15px;
+.btn-outline-custom:hover {
+    color: $btn-color;
+    background-color: $btn-background;
+    border-color: $btn-border;
+}
 
-            a {
-                background: #e9edfb;
-                color: $color_5;
-                line-height: 1;
-                display: inline-block;
-                text-align: center;
-                border-radius: 50%;
-                width: 36px;
-                height: 36px;
-                padding-top: 9px;
+.btn-outline-custom:focus,
+.btn-outline-custom.focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
 
-                &:hover {
-                    background: #f82249;
-                    color: $color_1;
-                }
+.btn-outline-custom.disabled,
+.btn-outline-custom:disabled {
+    color: $btn-color;
+    background-color: $btn-background;
+}
 
-                i {
-                    font-size: 18px;
-                }
-            }
-        }
+.btn-outline-custom:not(:disabled):not(.disabled):active,
+.btn-outline-custom:not(:disabled):not(.disabled).active,
+.show>.btn-outline-custom.dropdown-toggle {
+    color: $btn-color;
+    background-color: $btn-background;
+    border-color: $btn-border;
+}
 
-        p {
-            color: $color_5;
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
-    }
+.btn-outline-custom:not(:disabled):not(.disabled):active:focus,
+.btn-outline-custom:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-custom.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
