@@ -20,10 +20,8 @@ export const Education: React.FC = () => {
                     <div className="col-12">
                         <p>
                             <img
-                                style={{ padding: 15, float: "right" }}
+                                style={{ padding: 15, float: "right", maxWidth: "200px" }}
                                 src={`${contentRoot}/images/UNCG_Spartans_logo.png`}
-                                width="178"
-                                height="146"
                             />
                         </p>
                         <h4>Master of Science - Information Systems &amp; Operations Management</h4>
@@ -42,10 +40,8 @@ export const Education: React.FC = () => {
                     <div className="col-12">
                         <h4>
                             <img
-                                style={{ float: "right" }}
+                                style={{ padding: 15, float: "right", maxWidth: "200px" }}
                                 src={`${contentRoot}/images/East_Tennessee_State_Buccaneers_logo.png`}
-                                width="150"
-                                height="149"
                             />
                         </h4>
                         <h4>Bachelor of Science - Computer Science</h4>

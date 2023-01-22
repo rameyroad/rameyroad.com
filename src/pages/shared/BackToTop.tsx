@@ -1,6 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { scrollToTop } from "../../services/apiClient";
+
 import "./BackToTop.scss";
 
 export const BackToTop: React.FC = () => {
@@ -8,14 +10,6 @@ export const BackToTop: React.FC = () => {
 
     const handleScroll = () => {
         setScrollPosition(window.pageYOffset);
-    };
-
-    const scrollToTop = () => {
-        let options: ScrollToOptions = {
-            top: 0,
-            behavior: "smooth",
-        };
-        window.scrollTo(options);
     };
 
     useEffect(() => {

@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-import "./Header.scss";
+import { scrollToTop } from "../../services/apiClient";
+
 import logo from "../../assets/images/logo.png";
+
+import "./Header.scss";
 
 export const Header: React.FC = () => {
     const location = useLocation();
@@ -28,7 +31,9 @@ export const Header: React.FC = () => {
     });
 
     useEffect(() => {
-        console.log("location", location);
+        if (location?.pathname) {
+            scrollToTop();
+        }
     }, [location.pathname]);
 
     return (

@@ -1,7 +1,6 @@
 import { Project } from "../@types/project";
 
-export const contentRoot =
-    "https://rameyroadeus01.blob.core.windows.net/rameyroad-com/content";
+export const contentRoot = "https://rameyroadeus01.blob.core.windows.net/rameyroad-com/content";
 
 export const getAllProjects = async () => {
     try {
@@ -14,4 +13,12 @@ export const getAllProjects = async () => {
         console.error("getAllProjects", error);
         return Promise.reject(error);
     }
+};
+
+export const scrollToTop = () => {
+    let options: ScrollToOptions = {
+        top: 0,
+        behavior: "smooth",
+    };
+    window.scrollTo(options);
 };
