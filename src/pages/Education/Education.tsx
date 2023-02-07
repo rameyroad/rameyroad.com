@@ -32,10 +32,10 @@ export const Education: React.FC = () => {
                             </a>
                             at the University of North Carolina at Greensboro in August of 2005.
                         </p>
-                        <ul>
+                        {/* <ul>
                             <li>Graduated summa cum laude (3.92/4.00)</li>
                             <li>Academic Excellence award for outstanding academic achievement</li>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className="col-12">
                         <h4>
@@ -52,10 +52,10 @@ export const Education: React.FC = () => {
                             </a>
                             in August of 1998.
                         </p>
-                        <ul>
+                        {/* <ul>
                             <li>Graduated cum laude (3.53/4.00)</li>
                             <li>Member of Upsilon Pi Epsilon Computer Science Honor Society</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
