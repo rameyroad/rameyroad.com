@@ -30,7 +30,7 @@ export const About: React.FC = () => {
                             services industries.
                         </p>
                         <p>
-                            We offer full-stack developer services that primarily focuses on Microsoft technologies. We
+                            We offer full-stack developer services that primarily focus on Microsoft technologies. We
                             have architected and built solutions for the full spectrum of organizations - from global
                             enterprises, to one-person operations. We love developing great ideas into great solutions.
                         </p>
