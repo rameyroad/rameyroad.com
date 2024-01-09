@@ -23,20 +23,20 @@ export const About: React.FC = () => {
                     </div>
                     <div className="col-12 text-left">
                         <p>
-                            Ramey Road is an independent software development and consulting company in central North
-                            Carolina. The principal member, Jason Moore, has more than 20 years experience with software
-                            design and architecture. I have designed and built web, mobile, server-side, and desktop
-                            applications for the retail, educational, non-profit, real-estate, and financial services
-                            industries.
+                            Ramey Road, Inc. is an independent software and technology consulting company in central
+                            North Carolina. The founder and CEO, Jason Moore, has more than 20 years experience with
+                            software design and architecture, having designed and built web, mobile, server-side, and
+                            desktop applications for the retail, educational, non-profit, real-estate, and financial
+                            services industries.
                         </p>
                         <p>
-                            I am a full-stack developer that primarily focuses on Microsoft technologies. I have
-                            architected and built solutions for the full spectrum of organizations - from global
-                            enterprises, to one-person operations. I love developing great ideas into great solutions.
+                            We offer full-stack developer services that primarily focuses on Microsoft technologies. We
+                            have architected and built solutions for the full spectrum of organizations - from global
+                            enterprises, to one-person operations. We love developing great ideas into great solutions.
                         </p>
                         <p>
-                            Whether you are a small businesses or a large &amp; growing enterprise, I can help you
-                            realize the ideas that take your business to the next level.
+                            Whether you are a small businesses or a large &amp; growing enterprise, Ramy Road can help
+                            you realize the ideas that take your business to the next level.
                         </p>
                     </div>
                 </div>
