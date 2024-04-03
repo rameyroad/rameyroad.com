@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
         <footer id="footer" className={isInViewport ? "" : ""} ref={sectionRef}>
             <div className="container">
                 <div className="copyright">
-                    &copy; Copyright <strong>Ramey Road</strong>. All Rights Reserved
+                    &copy; Copyright <strong>Ramey Road, Inc.</strong>. All Rights Reserved
                 </div>
             </div>
         </footer>
