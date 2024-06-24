@@ -243,6 +243,11 @@ export const Resume: React.FC = () => {
                                             Download as PDF
                                         </a>
                                     </h4>
+                                    <h4>
+                                        <a href={`${contentRoot}/docs/Resume.docx`} target="_blank" rel="noopener">
+                                            Download as Word Document
+                                        </a>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
