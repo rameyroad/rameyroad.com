@@ -7,6 +7,7 @@ import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { ProjectDisplay } from "./pages/Portfolio/ProjectDisplay";
 import { Resume } from "./pages/Resume/Resume";
 import { Education } from "./pages/Education/Education";
+import { Images } from "./pages/Images/Images";
 
 import "./App.scss";
 
@@ -23,6 +24,8 @@ function App() {
                         <Route path="/resume/:detailId" element={<Resume />}></Route>
                         <Route path="/resume" element={<Resume />}></Route>
                         <Route path="/education" element={<Education />}></Route>
+                        <Route path="/images/:imageId" element={<Images />}></Route>
+                        <Route path="/images" element={<Images />}></Route>
                         <Route path="/" element={<Home />}></Route>
                     </Routes>
                 </Layout>
