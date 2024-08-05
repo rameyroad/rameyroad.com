@@ -16,7 +16,12 @@ export const Header: React.FC = () => {
 
     const toggleMenu = () => setMenuExpanded(!menuExpanded);
 
-    let navbarclassName = `${location?.pathname === "/" && scrollPosition === 0 ? "" : "header-scrolled"}`;
+    let navbarclassName = "";
+    if (location?.pathname === "/") {
+        navbarclassName = scrollPosition > 100 ? "header-scrolled" : "";
+    } else {
+        navbarclassName = "header-sub";
+    }
 
     const handleScroll = () => {
         setScrollPosition(window.pageYOffset);
